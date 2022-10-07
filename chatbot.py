@@ -1,8 +1,12 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
 import os
 import aiml
+from gtts import gTTS
+import os
 
 BRAIN_FILE="hippocampus.brn"
+language = 'en'
 
 k = aiml.Kernel()
 
@@ -25,7 +29,14 @@ else:
 while True:
     input_text = input(" Human : > ")
     response = k.respond(input_text)
+    myobj = gTTS(text=response, lang=language, slow=False)
+    myobj.save("MIRA.mp3")
     print(" [ MIRA ] > "+response)
+    os.system("mpg321 -q MIRA.mp3")
+    if response == "See you Later ." or response == "Bye." or response == "TTYL, ." or response == "Goodbye." or response == "Thanks for chatting, ." or response == "Sayonara." or response == "Until next time.":
+        print("*** MIRA exit chatting ***")
+        break
+
 
 #while True:
 #    reply = k.respond(input(" Human : >>>> "))
