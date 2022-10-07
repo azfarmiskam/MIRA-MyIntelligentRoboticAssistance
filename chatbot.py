@@ -6,15 +6,11 @@ from gtts import gTTS
 import os
 
 BRAIN_FILE="hippocampus.brn"
-language = 'en'
+language = 'en-uk'
 
 k = aiml.Kernel()
 
-# To increase the startup speed of the bot it is
-# possible to save the parsed aiml files as a
-# dump. This code checks if a dump exists and
-# otherwise loads the aiml from the xml files
-# and saves the brain dump.
+# part to learn everything and store in the brain
 if os.path.exists(BRAIN_FILE):
     print("Loading from memory: " + BRAIN_FILE)
     k.loadBrain(BRAIN_FILE)
@@ -29,8 +25,8 @@ else:
 while True:
     input_text = input(" Human : > ")
     response = k.respond(input_text)
-    myobj = gTTS(text=response, lang=language, slow=False)
-    myobj.save("MIRA.mp3")
+    tts = gTTS(text=response, lang=language, slow=False)
+    tts.save("MIRA.mp3")
     print(" [ MIRA ] > "+response)
     os.system("mpg321 -q MIRA.mp3")
     if response == "See you Later ." or response == "Bye." or response == "TTYL, ." or response == "Goodbye." or response == "Thanks for chatting, ." or response == "Sayonara." or response == "Until next time.":
