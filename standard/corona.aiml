@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+<category><pattern>WHAT IS CORONAVIRUS</pattern>
+<template>Coronaviruses are a family of viruses that typically cause mild respiratory infections like the common cold but also more severe (and potentially deadly) infections. They are zoonotic diseases, meaning they are transmitted from animals to people.</template>
+</category>
+<category><pattern>WHAT DISEASES ARE CAUSED BY CORONAVIRUS</pattern>
+<template>A coronavirus that originated in China led to the Severe Acute Respiratory Syndrome (SARS) outbreak in 2003. Another coronavirus emerged in 2012 in Saudi Arabia, causing Middle East Respiratory Syndrome (MERS)</template>
+</category>
+
+<category><pattern>WHY DOES CORONAVIRUS CAUSE SHORTNESS OF BREATH</pattern>
+<template>COVID-19 can cause damage to the lungs that impedes their ability to remove oxygen from the air. A lot of patients develop what’s known as severe acute respiratory distress syndrome. And they really benefit from having additional oxygen, particularly in hospital settings.</template>
+</category>
+
+<category><pattern>WHY AND HOW SHOULD I SEEK MEDICAL ATTENTION</pattern>
+<template>If you develop any of the following emergency warning signs for COVID-19, get medical attention immediately by calling your doctor's office. Emergency warning signs include (but are not limited to):
+
+    Trouble breathing
+    Persistent pain or pressure in the chest
+    New confusion or inability to arouse
+    Bluish lips or face
+</template>
+</category>
+
+<category><pattern>HOW IS CORONAVIRUS TRANSMITTED</pattern>
+<template>Coronaviruses are typically transmitted from person to person through exhalation of respiratory droplets (from the nose and mouth) and close contact. People can contract COVID-19 if they breathe in droplets from an infected person who coughs or exhales droplets. Those droplets can also land on objects and surfaces, and people can then catch the virus from touching those surfaces and then touching their eyes, nose, or mouth. </template>
+</category>
+
+<category><pattern>WHAT SHOULD WE DO IF WE ARE INFECTED BY CORONAVIRUS</pattern>
+<template>Those who think they may have been exposed to coronavirus, either through travel to an affected area or close contact with someone who has a confirmed case, should call a healthcare professional if they have any of the symptoms.
+
+It is important to call first, so that the clinic or hospital can prepare and prevent the spread of infection. Stay home and away from other people if you might have been exposed to COVID-19.</template>
+</category>
+
+<category>
+<pattern>How does the virus spread</pattern>
+<template>
+The virus that causes COVID-19 is thought to spread mainly from person to person, mainly through respiratory droplets produced when an infected person coughs, sneezes, or talks. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another (within about 6 feet).
+</template>
+</category>
+
+</aiml>
